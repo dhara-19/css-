@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/navbar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style 1.css">
+</head>
+<body>
+    <div class="navbar">
+   <a href="http://127.0.0.1:5500/navbar.html#fr">Fresh</a> 
+   <a href="http://127.0.0.1:5500/navbar.html#bs">Best sellers</a>
+   <a href="http://127.0.0.1:5500/navbar.html#se">Sell</a>
+   <a href="http://127.0.0.1:5500/navbar.html#td">Today deals</a>
+</div>
+
+<div class="abc1" id="fr">
+    <h3>Fresh</h3>
+    <ul type="square">
+        <li> Dairy &amp; Bread</li>
+        <li>Feminine hygiene</li>
+        <li>Trending near you</li>
+    </ul>
+    <img src="./Document_files/Dairy__Bread._QL30_.jpg" height="300" alt="">
+   
+
+</div>
+<div class="abc2" id="bs">
+<h3>Best sellers</h3>
+<ul type="square">
+    <li>Bestsellers in Clothing &amp; Accessories</li>
+    <li>Bestsellers in Beauty</li>
+    <li>Bestsellers in Amazon Renewed</li>
+</ul>
+<img src="./Document_files/51MdopjBs7L._AC_UL450_SR450,320_.jpg" height="300" alt="">
+</div>
+<div class="abc3" id="se">
+    <h3>Sell</h3>
+    
+    <ul type="square">
+        <li>Become a seller on
+            Amazon</li>
+    </ul>
+    <img src="./Document_files/Paid_Services_INR._CB424651263_.svg" height="300">
+<h1> Receive timely payments</h1>
+<p>Amazon ensures your payments are deposited directly in your bank account within 7-14 days.</p>
+</div>
+<div class="abc4" id="td">
+    <h3>Today deals</h3>
+    <img src="./Document_files/all_deals.jpg" height="300" alt="">
+    <h5> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All deals</h5>
+    <table>
+        <tbody><tr>
+            <td>
+                <img src="./Document_files/51J-H43tb1L._AC_UF226,226_FMjpg_.jpg" height="300" alt="">
+            </td>
+            
+            <td>
+                <img src="./Document_files/31OMfO3QOpL._AC_UF226,226_FMjpg_.jpg" height="300" alt="">
+            </td>
+           
+        </tr>
+        <tr>
+            <td><button>up to 74% off</button>deal of the today</td>
+            <td><button>up to 50% off</button>deal of the today</td>
+        </tr>
+        <tr>
+            <td>Best of home furnishing</td>
+            <td>Lavie,lino perros bestseller</td>
+        </tr>
+    </tbody></table>
+    
+</div>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
